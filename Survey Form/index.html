@@ -1,0 +1,160 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200&display=swap" rel="stylesheet">
+</head>
+<body>
+    <body>
+
+        <!-- header section -->
+        <div class="container">
+          <header class="header">
+            <h1 id="title" class="text-center"> Leadership Training Survey Form</h1>
+            <p id="description" class="description text-center">Thank you for helping us improve our training program</p>
+          </header>
+    
+          <!-- form section  -->
+
+          <form id="survey-form">
+            <div class="form-group">
+              <label id="name-label" for="name">Name</label>
+              <input
+                type="text"
+                name="name"
+                id="name"
+                class="form-control"
+                placeholder="Enter your name"
+                required
+              />
+            </div>
+    
+            <div class="form-group">
+              <label id="email-label" for="email">Email</label>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                class="form-control"
+                placeholder="Enter your email"
+                required
+              />
+            </div>
+    
+            <div class="form-group">
+              <label id="number-label" for="number">Age<span class="clue">(optional)</span></label>
+              <input
+                type="number"
+                name="age"
+                id="number"
+                min="10"
+                max="99"
+                class="form-control"
+                placeholder="Age"
+              />
+            </div>
+    
+            <div class="form-group">
+              <p>What option best describes your current role?</p>
+              <select id="dropdown" name="role"class="form-control" required>
+                <option disabled selected value>Select current role</option>
+                <option value="manager">Manager</option>
+                <option value="supervisor">Supervisor</option>
+                <option value="team lead">Team Lead</option>
+                <option value="full-time">Full Time</option>
+              </select>
+            </div>
+
+        <div class="form-group">
+              <p>Would you recommend our leadership training to other employees?</p>
+           <label>
+                <input
+                  name="user-recommend"
+                  value="definitely"
+                  type="radio"
+                  class="input-radio"
+                  checked
+                />Definitely</label>
+
+            <label>
+                <input
+                  name="user-recommend"
+                  value="maybe"
+                  type="radio"
+                  class="input-radio"
+                />Maybe</label>
+
+             <label>
+                <input
+                  name="user-recommend"
+                  value="not-sure"
+                  type="radio"
+                  class="input-radio"
+                />Not Sure</label>
+            </div>
+    
+    <div class="form-group">
+      <p>What is your favorite topic in leadership training?</p>
+       <select id="most-like" name="mostLike" class="form-control" required>
+                <option disabled selected value>Select an option</option>
+                <option value="coaching">Coaching and Mentorship</option>
+                <option value="conflict">Conflict Resolution</option>
+                <option value="commuication">Effective Communication</option>
+                <option value="leadership">Situational Leadership</option>
+              </select>
+    </div>
+    <div class="form-group">
+      <p>What would you like to see improved?<span class="clue"> (Check all the apply)</span></p>
+      <label>
+        <input
+                  name="prefer"
+                  value="recognition"
+                  type="checkbox"
+                  class="input-checkbox"
+                />Recognition Ideas</label
+              >
+    
+     <label>
+       <input
+                  name="prefer"
+                  value="motivation"
+                  type="checkbox"
+                  class="input-checkbox"
+                />Motivating for Performance</label
+              >
+                <label
+                ><input
+                  name="prefer"
+                  value="conversations"
+                  type="checkbox"
+                  class="input-checkbox"
+                />Handling Difficult Conversations</label>
+             <label
+                ><input
+                  name="prefer"
+                  value="teamwork"
+                  type="checkbox"
+                  class="input-checkbox"
+                />Building Teamwork</label>
+    </div>
+    <div class="form-group">
+      <p>Any other suggestions?</p>
+       <textarea
+                id="comments"
+                class="input-textarea"
+                name="comment"
+                placeholder="Enter your comment here..."
+              ></textarea>
+    </div>
+
+    <!-- button section  -->
+    <div class="form-group">
+      <button type="submit" id="submit" class="submit-button">Submit</button>
+    </div>
+          </form>
+        </div>
+</body>
+</html>
