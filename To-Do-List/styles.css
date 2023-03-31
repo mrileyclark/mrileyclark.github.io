@@ -1,0 +1,35 @@
+
+body{
+    background: #352f5b;
+  }
+
+
+  /* sets todo list section to this max width */
+  .container{
+    max-width: 400px;
+  }
+
+  /* sets text in search tools color and bg color when click (in focus) */
+  input[type=text],
+  input[type=text]:focus{
+    color: #fff;
+    border: none;
+    background: rgba(0,0,0,0.2);
+    max-width: 400px;
+  }
+
+  /* sets tolist items color */
+  .todos li{
+    background: #423a6f;
+  }
+
+
+/* sets points when hover over trash can icon */
+  .delete{
+    cursor: pointer;
+  }
+  
+  /* hides todo override any other class with !important */
+  .filtered{
+    display: none !important;
+  }

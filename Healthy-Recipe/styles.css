@@ -1,0 +1,32 @@
+/* sets image height */
+img {
+    height: 150px;
+}
+
+/* sets font size of the paragraph description */
+.description {
+    font-size: 20px;
+}
+
+/* time is bold */
+#cook-time {
+    font-weight: bold;
+}
+
+/* sets bullet points to bold */
+.ingredients li {
+    list-style: square;
+}
+
+/* sets time per setp gray */
+p.time {
+    color: gray;
+}
+
+.external-link {
+    color: seagreen;
+}
+
+h1, h2, p, li {
+    font-family: Arial, Helvetica, sans-serif;
+}
