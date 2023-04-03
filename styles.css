@@ -358,7 +358,7 @@ footer {
         <ul class="nav-list"> */
 
 
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 600px) {
     /*changes reflects on screen with a width of 720px and below*/
 
     .nav {
