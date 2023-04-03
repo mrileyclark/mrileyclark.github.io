@@ -101,7 +101,7 @@ a {
     color: var(--main-white);
 }
 
-/* set cover of hover */
+/* set color of hover */
 li > a:hover {
    color: var(--main-teal);
 }
@@ -380,6 +380,14 @@ footer {
    
     .nav ul li {
       margin: 8px;
+    }
+    
+    li > a:hover {
+      color: var(--main-teal);
+    }
+
+    a:hover {
+       color: var(--main-teal);
     }
 
     .burger-menu {
