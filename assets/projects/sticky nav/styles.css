@@ -1,0 +1,138 @@
+/* reset removes margin and padding */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    /* sets body to Robot, display flex in column
+    centered vertically and horizontially and flex
+    box height takes up entire height of browser
+    overflow not scroll bars show by default */
+    font-family: 'Open Sans', sans-serif;
+    color: #222;
+    padding-bottom: 50px;
+}
+
+/* sets content max-width
+and centers the text  */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* fixes to top */
+.nav {
+    position: fixed;
+    background-color: #222;
+    top: 0;
+    left: 0;
+    right: 0;
+    /* smooth transition when scroll nav changess */
+    transition: all .3s ease-in-out;
+}
+
+/* sets logo right flex links to right side */
+.nav .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    transition: all .3s ease-in-out;
+}
+
+/* list items in row no bullet */
+.nav ul {
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+    justify-content: center;
+}
+
+ /* sets links color, spread out */
+.nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 7px 15px;
+    transition: all .3s ease-in-out;
+}
+
+/* changes nav to white when active */
+.nav.active {
+    background-color: #fff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* styles active links color */
+.nav.active a {
+    color: #000;
+}
+
+/* when nav active less padding */
+.nav.active .container {
+    padding: 10px 0;    
+}
+
+/* styles links a differnt color when hover
+current and active */
+.nav a.current,
+.nav a:hover {
+    color: #10da71;
+    font-weight: bold;
+}
+
+/* takes up full screen with image with text*/
+.hero {
+    background-image: url('https://images.unsplash.com/photo-1674621701889-601260b11e4e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDM5fGFldTZyTC1qNmV3fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=800&q=60');
+   /*  */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom center;
+    height: 100vh;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    margin-bottom: 20px;
+    z-index: -2;
+}
+
+/* adds overlay image fades some*/
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+}
+
+/* styles heading */
+.hero h1 {
+    font-size: 46px;
+    margin: -20px 0 20px;
+}
+
+/* styles paragraph */
+.hero p {
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+
+/* styles content section headings */
+.content h2, .content h3 {
+    font-size: 150%;
+    margin: 20px 0;
+}
+
+/* styles content paragraphs */
+.content p {
+    color: #555;
+    line-height: 30px;
+    letter-spacing: 1.2px;
+}

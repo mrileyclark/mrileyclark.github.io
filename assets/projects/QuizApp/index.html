@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/projects/QuizApp/styles.css">
+    <title>Quiz App</title>
+</head>
+<body>
+  <div class="quiz-container" id="quiz">
+    <div class="quiz-header">
+        <!-- this is the question section-->
+        <h2 id="question">Question text</h2>
+        <!-- this is the answer section -->
+        <ul>
+            <li>
+                <input type="radio" name="answer" id="a" class="answer">
+                <label for="a" id="a_text">Question</label>
+            </li>
+            <li>
+                <input type="radio" name="answer" id="b" class="answer">
+                <label for="b" id="b_text">Question</label>
+            </li>
+            <li>
+                <input type="radio" name="answer" id="c" class="answer">
+                <label for="c" id="c_text">Question</label>
+            </li>
+            <li>
+                <input type="radio" name="answer" id="d" class="answer">
+                <label for="d" id="d_text">Question</label>
+            </li>
+        </ul>
+    </div>
+    <button id="submit">Submit</button>
+  </div>
+    
+
+    <script src="/assets/projects/QuizApp/script.js"></script>
+    <audio autoplay>
+        <source src="/assets/projects/QuizApp/audio.mp3/8d82b5_Harry_Potter_Intro_Sound_Effect.mp3" type="audio/mpeg">
+      </audio>
+</body>
+</html>

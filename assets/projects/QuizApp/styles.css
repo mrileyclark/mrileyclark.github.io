@@ -1,0 +1,82 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    /* sets body to Poppins, display flex 
+    centered vertically and horizontially and flex
+    box height takes up entire height of browser
+    overflow not scroll bars show by default */
+    background-color: #b8c6db;
+    /* background-image: linear-gradient(315deg, #b8c6db 0%, #f5f7fa 100%); */
+    background-image: url('https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T1/images/I/91OTtJUf1JL.jpg');
+    font-family: 'Shadows Into Light', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+}
+
+/* makes this a box like container*/
+.quiz-container {
+    background-color: ivory;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 2px rgba(100, 100, 100, 0.1);
+    width: 600px;
+    overflow: hidden;
+}
+
+/*  questions/answers are a header*/
+.quiz-header {
+    padding: 4rem;
+}
+
+
+/* centers header adds padding no margin*/
+h2 {
+    padding: 1rem;
+    text-align: center;
+    margin: 0;
+    font-size: 2.2rem;
+}
+
+
+
+/* no bullets shifts them to left a little */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+
+/* spaces out questions and sets font-size */
+ul li {
+    font-size: 1.8rem;
+    margin: 1rem 0;
+}
+
+ul li label {
+    cursor: pointer;
+}
+
+/* styles button */
+button {
+    background-color: #7f0909;
+    color: black;
+    border: none;
+    display: block;
+    width: 100%;
+    cursor: pointer;
+    font-size: 2.2rem;
+    font-family: inherit;
+    padding: 1.3rem;
+}
+
+
+/* chanes color when hover over button*/
+button:hover {
+    background-color: #0d6217;
+}
+
