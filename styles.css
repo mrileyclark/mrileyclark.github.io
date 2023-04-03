@@ -1,0 +1,396 @@
+:root {
+    --main-white: #f0f0f0;
+    --main-purple:   #301B3F;
+    --main-beige:  #908d91;
+    --main-blue: #253144;
+    --main-black: #151515;
+    --main-teal: #04989d;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+
+/* sets size/scroll behavior of html 
+ box-sizing tells browser to account for any 
+ border/padding in the values you 
+ specify for an element's width and heigh*/
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 1.4;
+    color: var(--main-white);
+}
+
+
+/* sets nav fixed at top right
+sets bg color of nav bar */
+.nav {
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 3.5rem;
+    background-color: var(--main-purple);
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* sets links inline and pushes
+out from the right a bit  */
+.nav-list {
+    display: flex;
+    margin-right: 2rem;
+}
+
+
+.burger-menu {
+    color: var(--main-purple);
+    font-size: 2rem;
+    border: 0;
+    background-color: var(--main-teal);
+    cursor: pointer;
+    display: none;
+  }
+
+
+/* removes bullets from links */
+ul {
+    list-style: none;
+}
+
+/* styles links */
+.nav-list a {
+    display: block;
+    font-size: 2.2rem;
+    padding: 2rem;
+    transition: 0.3s;
+}
+
+  .nav a {
+    color: var(--main-white);
+    transition: var(--transition);
+  }
+ 
+  .nav ul {
+    display: flex;
+    gap: 1.9rem;
+  }
+
+
+/* removes link underline and set color */
+a {
+    text-decoration: none;
+    color: var(--main-white);
+}
+
+/* set cover of hover */
+li > a:hover {
+   color: var(--main-teal);
+}
+
+a:hover {
+    color: var(--main-teal);
+}
+
+/* /* styles name  */
+.welcome-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-color: #000; 
+    background-image: linear-gradient(62deg, #393539 0%, #181719 100%); 
+}
+
+
+/* styles main heading */
+h1 {
+    font-size: 6rem;
+    padding: 2rem;
+}
+
+/* styles second heading */
+h2 {
+    font-size: 4.2rem;
+}
+
+/* styles both headings shared css */
+h1, h2 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    text-align: center;
+}
+
+
+.animate {
+    animation-duration: 3s;
+    animation-name: slidein;
+    animation-iteration-count: 3;
+  }
+
+  @keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 300%;
+    }
+  
+    to {
+      margin-left: 80%;
+      width: 100%;
+    }
+  }
+  
+  
+
+/* styles developer paragraph */
+.welcome-section > p {
+    font-size: 3rem;
+    font-weight: 200;
+    font-style: italic;
+    color: var(--main-beige);
+}
+
+
+/* styles project section */
+.projects-section {
+    text-align: center;
+    padding: 10rem 2rem;
+    background: var(--main-blue);
+}
+
+/* styles project header */
+.projects-section-header {
+    max-width: 640px;
+    margin: 0 auto 6rem auto;
+    border-bottom: 0.2rem solid var(--main-white);
+}
+
+/* styles grid holds all the projects
+so responsive */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 4rem;
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    margin-bottom: 6rem;
+}
+
+
+/* styles projects tile  */
+.project {
+    background: darkgray;
+    box-shadow: 1px 1px 2px rgb(0 0 0 / 50%);
+    border-radius: 2px;
+}
+
+/* styles img of proj */
+.project-image {
+    height: calc(100% - 6.8rem); ;
+    width: 100%;
+    object-fit: cover;
+    max-height: max-auto;  
+}
+
+ 
+
+img {
+    display: block;
+    width: 100%;
+}
+
+/* styles project titles */
+.project-title {
+    font-size: 2rem;
+    font-weight: 900;
+    padding: 2rem 0.5rem;
+}
+
+
+/* styles contact section */
+.contact-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 80vh;
+    padding: 0 2rem;
+    background: var(--main-beige);
+}
+
+/* styles lets work together */
+.contact-section-header > h2 {
+    font-size: 6rem;
+    padding-bottom: 2rem;
+}
+
+
+/* styles coffee p */
+.contact-section-header > p {
+    font-style: italic;
+}
+
+/* styles contact links */
+.contact-links {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    max-width: 980px;
+    margin-top: 4rem;
+    flex-wrap: wrap;
+}
+
+/* styles text on contact links */
+.contact-details {
+    font-size: 2.4rem;
+    text-shadow: 2px 2px 1px #1f1f1f;
+    transition: transform 0.3s ease-out;
+}
+
+.fab {
+    font-family: "Font Awesome 5 Brands";
+}
+
+.fa, .fab, .fal, .far, .fas {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    line-height: 1;
+}
+
+.fa-facebook-square::before {
+    content: "\f082";
+}
+
+.fa-github:before {
+    content: "\f09b";
+}
+
+.fa-twitter:before {
+    content: "\f099";
+}
+
+.fa-at:before {
+    content: "\f1fa";
+}
+
+.fa-html5:before {
+    content: "\f13b";
+}   
+
+.fa-css3-alt:before {
+    content: "\f38b";
+}
+
+.fa-js:before {
+    content: "\f3b8";
+}
+
+.fa-react:before {
+    content: "\f41b";
+}
+
+/* .social-links {
+    padding: 20px;
+} */
+
+.social-links {
+    /*  */
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    max-width: 980px;
+    flex-wrap: wrap;
+    font-size: 2.4rem;
+    padding-top: 4rem;
+}
+
+
+.scroll-up {
+    position: fixed;
+    right: 0.5%;
+    bottom: 9%;
+    cursor: pointer;
+  }
+  
+  .up-arrow {
+    width: 5rem;
+    height: 5rem;
+  }
+
+footer {
+    font-weight: 300;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 2.5rem;
+    background-color: var(--main-purple);
+    border-top: 4px solid var(--main-purple);
+}   
+
+
+/* <nav id="navbar" class="nav">
+        <ul class="nav-list"> */
+
+
+@media screen and (max-width: 720px) {
+    /*changes reflects on screen with a width of 720px and below*/
+
+    .nav {
+      padding: 1.5rem 1rem;
+    }
+
+    .nav ul {
+      position: fixed;
+      background-color: var(--main-purple);
+      flex-direction: column;
+      top: 80px;
+      left: 10%;
+      width: 80%;
+      text-align: center;
+      transform: translateX(120%);
+      transition: transform 0.5s ease-in;
+    }
+
+   
+    .nav ul li {
+      margin: 8px;
+    }
+
+    .burger-menu {
+      display: block;
+    }
+
+    .nav ul.show {
+      transform: translateX(0);
+    }
+
+      .scroll-up {
+        padding-bottom: 2rem;
+      }
+   } 
