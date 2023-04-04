@@ -427,7 +427,7 @@ footer {
         padding-bottom: 2rem;
       }
     
-    html {
-        scroll-behavior: smooth;
-    }
+    body {
+        overflow: hidden; /* Hide scrollbars */
+    }   
 } 
