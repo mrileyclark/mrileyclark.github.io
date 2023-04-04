@@ -1,19 +1,35 @@
-body, h1 {
-    font-family: "Raleway", sans-serif;
-}
-
 body, html {
     height: 100%;
-}
-
-
-.bgimg {
+    margin: 0;
+  }
+  
+  .bgimg {
     background-image: url('https://images.unsplash.com/photo-1612528443702-f6741f70a049?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2980&q=80');
-    min-height: 100%;
+    height: 100%;
     background-position: center;
     background-size: cover;
-}
-
-.w3-display-middle {
-    padding-bottom: 35px;
-}
+    position: relative;
+    color: black;
+    font-family: "Poppins", sans-serif;
+    font-size: 25px;
+  }
+  
+  .topleft {
+    position: absolute;
+    top: 0;
+    left: 16px;
+  }
+  
+  .bottomleft {
+    position: absolute;
+    bottom: 0;
+    left: 16px;
+  }
+  
+  .middle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
