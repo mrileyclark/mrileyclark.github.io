@@ -426,9 +426,5 @@ footer {
     
       .scroll-up {
         padding-bottom: 2rem;
-      }
-    
-    body {
-        overflow: hidden; /* Hide scrollbars */
-    }   
+     }  
 } 
