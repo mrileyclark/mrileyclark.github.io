@@ -426,4 +426,8 @@ footer {
       .scroll-up {
         padding-bottom: 2rem;
       }
-   } 
+    
+    html {
+        scroll-behavior: smooth;
+    }
+} 
