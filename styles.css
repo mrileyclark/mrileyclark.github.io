@@ -101,7 +101,7 @@ a {
     color: var(--main-white);
 }
 
-/* set color of hover */
+/* set cover of hover */
 li > a:hover {
    color: var(--main-teal);
 }
@@ -213,7 +213,6 @@ so responsive */
     max-height: max-auto;  
 }
 
- 
 
 img {
     display: block;
@@ -359,7 +358,7 @@ footer {
 
 
 @media screen and (max-width: 600px) {
-    /*changes reflects on screen with a width of 720px and below*/
+    /*changes reflects on screen with a width of 600px and below*/
 
     .nav {
       padding: 1.5rem 1rem;
@@ -377,17 +376,8 @@ footer {
       transition: transform 0.5s ease-in;
     }
 
-   
     .nav ul li {
       margin: 8px;
-    }
-    
-    li > a:hover {
-      color: var(--main-teal);
-    }
-
-    a:hover {
-       color: var(--main-teal);
     }
 
     .burger-menu {
@@ -398,6 +388,41 @@ footer {
       transform: translateX(0);
     }
 
+    h1 {
+        font-size: 3.8rem;
+    } 
+
+    .contact-section-header > h2 {
+        font-size: 4.8rem;
+        padding-bottom: 2rem;
+    }
+
+   
+    .projects-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        width: 100%;
+        /* max-width: 400px; */
+        margin: 0 auto;
+        margin-bottom: 4rem;
+    }
+    
+    .contact-details {
+        font-size: 2.2rem;
+        text-shadow: 2px 2px 1px #1f1f1f;
+        transition: transform 0.3s ease-out;
+    }
+
+     .social-links > a {
+        display: flex;
+        justify-content: space-evenly;
+        width: 40%;
+        max-width: 480px;
+        flex-wrap: wrap;
+        font-size: 2rem;
+        padding-top: 2rem; 
+    }
+    
       .scroll-up {
         padding-bottom: 2rem;
       }
